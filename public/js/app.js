@@ -224,4 +224,90 @@ const slider = (index, target) => {
     });
 };
 
-// 
+//^ gallery
+const imgContent = document.querySelectorAll('.gallery__image__caption');
+var x, y;
+
+function showImgContent(e) {
+    for(var i = 0; i < imgContent.length; i++) {
+        x = e.pageX;
+        y = e.pageY;
+        imgContent[i].style.transform = `translate(${x}px, ${y}px)`;
+    }
+}
+
+document.addEventListener('mousemove', showImgContent);
+
+
+// Lightbox modal
+const body = document.body;
+const items = document.querySelectorAll(".gallery_item");
+const modal = document.createElement("section");
+const modalImg = document.createElement("img");
+const modalPrev = createButton("prev");
+const modalNext = createButton("next");
+const modalClose = createButton("close");
+let currentItem = 0;
+let modalInstance;
+
+modal.classList.add("gallery__modal");
+modalPrev.classList.add("gallery__navigation--prev");
+modalNext.classList.add("gallery__navigation--next");
+modalClose.classList.add("gallery__navigation--close");
+
+function createButton(type) {
+    const button = document.createElement("button");
+    
+    if(type === "prev") {
+        button.addEventListener("click", prevItem);
+    } else if(type === "next") {
+        button.addEventListener("click", nextItem);
+    } else if(type === "close") {
+        button.addEventListener("click", closeModal);
+    }
+    
+    return button;
+}
+
+function prevItem() {
+    currentItem = (currentItem - 1 + items.length) % items.length;
+    updateModalImage();
+}
+
+function nextItem() {
+    currentItem = (currentItem + 1) % items.length;
+    updateModalImage();
+} 
+
+function closeModal() {
+    modal.remove();
+    body.classList.remove('noscroll');
+}
+
+function updateModalImage() {
+    const img = items[currentItem].querySelector("img");
+    modalImg.src = img.src;
+    modalImg.alt = img.alt;
+}
+
+function showModal(index) {
+    currentItem = index;
+    updateModalImage();
+    modal.innerHTML = '';
+    modal.append(modalImg, modalPrev, modalNext, modalClose);
+    document.body.appendChild(modal);
+    body.classList.add('noscroll');
+    modal.setAttribute('aria-hidden', 'false');
+}
+
+items.forEach(function(item, index) {
+    item.addEventListener('click', function() {
+        showModal(index);
+    });
+});
+
+document.body.addEventListener('keyup', (ev) => {
+    if (ev.key === "Escape" && modal.parentElement) {
+        closeModal();
+    }
+});

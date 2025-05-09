@@ -6,693 +6,423 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restau</title>
     <link rel="stylesheet" href="./public/css/app.css">
-</head
-
-<body>
+</head <body>
 <header class="d-flex flex-column gap-1">
-      <nav
-        class="d-flex align-items-center justify-content-between w-100 px-lg-10 px-2 py-2"
-      >
+    <nav class="d-flex align-items-center justify-content-between w-100 px-lg-10 px-2 py-2">
         <a href="./index.html" class="text-decoration-none text-white">
-          <h1>Restaurantly</h1>
+            <h1>Restaurantly</h1>
         </a>
         <div
-          class="navLinks d-flex flex-lg-row flex-column gap-lg-2 gap-4 align-items-lg-center align-items-start text-lg-start ps-lg-0 ps-3 justify-content-lg-start justify-content-center"
-        >
-          <a href="" class="text-white text-decoration-none">Home</a>
-          <a href="#about" class="text-white text-decoration-none">About</a>
-          <a href="#menu" class="text-white text-decoration-none">Menu</a>
-          <a href="#specials" class="text-white text-decoration-none"
-            >Specials</a
-          >
-          <a href="#events" class="text-white text-decoration-none">Events</a>
-          <a href="#chefs" class="text-white text-decoration-none">Chefs</a>
-          <a href="#gallery" class="text-white text-decoration-none">Gallery</a>
-          <span id="close"
-            ><i class="bi bi-x-lg fs-3 text-black fw-bold"></i
-          ></span>
-          <div class="dropDownDiv">
-            <p class="dropDown text-white text-decoration-none">
-              Dropdown <i class="bi bi-chevron-down fs-2"></i>
-            </p>
-            <div
-              class="dropDownSelect hidden ps-1 py-2 d-flex flex-column gap-2 bg-alpha text-white"
-            >
-              <p>Dropdownn 1</p>
-              <p>Dropdownn 2</p>
-              <p>Dropdownn 3</p>
-              <p>Dropdownn 4</p>
+            class="navLinks d-flex flex-lg-row flex-column gap-lg-2 gap-4 align-items-lg-center align-items-start text-lg-start ps-lg-0 ps-3 justify-content-lg-start justify-content-center">
+            <a href="" class="text-white text-decoration-none">Home</a>
+            <a href="#about" class="text-white text-decoration-none">About</a>
+            <a href="#menu" class="text-white text-decoration-none">Menu</a>
+            <a href="#specials" class="text-white text-decoration-none">Specials</a>
+            <a href="#events" class="text-white text-decoration-none">Events</a>
+            <a href="#chefs" class="text-white text-decoration-none">Chefs</a>
+            <a href="#gallery" class="text-white text-decoration-none">Gallery</a>
+            <span id="close"><i class="bi bi-x-lg fs-3 text-black fw-bold"></i></span>
+            <div class="dropDownDiv">
+                <p class="dropDown text-white text-decoration-none">
+                    Dropdown <i class="bi bi-chevron-down fs-2"></i>
+                </p>
+                <div class="dropDownSelect hidden ps-1 py-2 d-flex flex-column gap-2 bg-alpha text-white">
+                    <p>Dropdownn 1</p>
+                    <p>Dropdownn 2</p>
+                    <p>Dropdownn 3</p>
+                    <p>Dropdownn 4</p>
+                </div>
             </div>
-          </div>
-          <a href="#contact" class="text-decoration-none text-white">Contact</a>
+            <a href="#contact" class="text-decoration-none text-white">Contact</a>
         </div>
         <div class="d-flex align-items-center gap-1">
-          <button class="openModal">BOOK A TABLE</button>
-          <span id="open"
-            ><i class="bi bi-list fs-3 text-white fw-bold"></i
-          ></span>
+            <button class="openModal">BOOK A TABLE</button>
+            <span id="open"><i class="bi bi-list fs-3 text-white fw-bold"></i></span>
         </div>
-      </nav>
-      <div
-        class="modalDiv text-white d-flex flex-column gap-2 px-2 py-3 rounded-2"
-      >
+    </nav>
+    <div class="modalDiv text-white d-flex flex-column gap-2 px-2 py-3 rounded-2">
         <h2 class="text-start">Sign Up</h2>
         <div class="d-flex flex-column gap-2 align-items-center">
-          <input
-            type="text"
-            placeholder="Enter your name"
-            class="fs-2 rounded-1 ps-1 py-1 border border-1"
-          />
-          <input
-            type="email"
-            placeholder="Enter your email"
-            class="fs-2 rounded-1 ps-1 py-1 border border-1"
-          />
-          <input
-            type="password"
-            placeholder="Enter your password"
-            class="fs-2 rounded-1 ps-1 py-1 border border-1"
-          />
-          <input
-            type="password"
-            placeholder="Confirmyour password"
-            class="fs-2 rounded-1 ps-1 py-1 border border-1"
-          />
-          <div class="d-flex gap-2">
-            <button
-              class="closeModal bg-alpha py-1 px-1 border border-0 rounded-3"
-            >
-              Sign Up
-            </button>
-          </div>
+            <input type="text" placeholder="Enter your name" class="fs-2 rounded-1 ps-1 py-1 border border-1" />
+            <input type="email" placeholder="Enter your email" class="fs-2 rounded-1 ps-1 py-1 border border-1" />
+            <input type="password" placeholder="Enter your password" class="fs-2 rounded-1 ps-1 py-1 border border-1" />
+            <input type="password" placeholder="Confirmyour password"
+                class="fs-2 rounded-1 ps-1 py-1 border border-1" />
+            <div class="d-flex gap-2">
+                <button class="closeModal bg-alpha py-1 px-1 border border-0 rounded-3">
+                    Sign Up
+                </button>
+            </div>
         </div>
-      </div>
-      <div
-        class="heroSection mt-lg-30 mt-15 text-white d-flex flex-lg-row flex-column gap-lg-0 gap-2 justify-content-lg-around align-items-center text-lg-start text-center"
-      >
+    </div>
+    <div
+        class="heroSection mt-lg-30 mt-15 text-white d-flex flex-lg-row flex-column gap-lg-0 gap-2 justify-content-lg-around align-items-center text-lg-start text-center">
         <div class="d-flex flex-column gap-2">
-          <h1 class="">
-            Welcome to <span class="text-alpha">Restaurantly</span>
-          </h1>
-          <h4 class="text-white">
-            Delivering great food for more than 18 years!
-          </h4>
-          <div class="d-flex gap-2 flex-lg-row flex-column align-items-center">
-            <button
-              class="py-1 border border-2 border-alpha rounded-5 text-white bg-transparent"
-            >
-              OUR MENU
-            </button>
-            <button
-              class="py-1 border border-2 border-alpha rounded-5 text-white bg-transparent"
-            >
-              BOOK A TABLE
-            </button>
-          </div>
+            <h1 class="">
+                Welcome to <span class="text-alpha">Restaurantly</span>
+            </h1>
+            <h4 class="text-white">
+                Delivering great food for more than 18 years!
+            </h4>
+            <div class="d-flex gap-2 flex-lg-row flex-column align-items-center">
+                <button class="py-1 border border-2 border-alpha rounded-5 text-white bg-transparent">
+                    OUR MENU
+                </button>
+                <button class="py-1 border border-2 border-alpha rounded-5 text-white bg-transparent">
+                    BOOK A TABLE
+                </button>
+            </div>
         </div>
         <button class="playBtn bg-alpha border-0">
-          <i class="bi bi-play-circle text-white"></i>
+            <i class="bi bi-play-circle text-white"></i>
         </button>
-      </div>
-    </header>
-    <main>
-
-
-
-        <!--! about -->
-        <section id="about">
-            <div class="container">
-                <h1>Voluptatem dignissimos provident</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua.</p>
-                <ul>
-                    <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-check2-all" viewBox="0 0 16 16">
-                            <path
-                                d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0" />
-                            <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708" />
-                        </svg>
-                        </svg> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                    <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-check2-all" viewBox="0 0 16 16">
-                            <path
-                                d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0" />
-                            <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708" />
-                        </svg>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                    <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-check2-all" viewBox="0 0 16 16">
-                            <path
-                                d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0" />
-                            <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708" />
-                        </svg>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                        reprehenderit in
-                        voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-
-                </ul>
-                <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident</p>
-            </div>
-            <div class="image ">
-                <img width="600px" height="400px" src="./public/images/about.jpg" alt="">
-            </div>
-        </section>
-        <div class="whyus">
-            <div class="title">
-                <p>WHY US <span>————————</span></p>
-                <h1>Why Choose Our Restaurant</h1>
-
-            </div>
-            <div class="flex">
-                <div class="chooses">
-                    <h1>01</h1>
-                    <p>Lorem, ipsum.</p>
-                    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti esse excepturi facilis
-                        soluta modi?</span>
-                </div>
-                <div class="chooses">
-                    <h1>02</h1>
-                    <p>Lorem, ipsum.</p>
-                    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti esse excepturi facilis
-                        soluta modi?</span>
-
-                </div>
-                <div class="chooses">
-                    <h1>03</h1>
-                    <p>Lorem, ipsum.</p>
-                    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti esse excepturi facilis
-                        soluta modi?</span>
-
-                </div>
-            </div>
-        </div>
-        <!--~ menu -->
-        <section id="menu" class="menu">
-            <div class="titre">
-                <p>MENU<span>———————————</span></p>
-                <h1>Check Our Tasty Menu </h1>
-            </div>
-
-            <div class="links">
-                <button id="all-tabs">All</button>
-                <button id="starters">Starters</button>
-                <button id="salades">Salades</button>
-                <button id="specialty">Specialty</button>
-            </div>
-
-            <div class="MENU">
-                <div class="starters-plat plats">
-                    <img src="./public/images/lobster-bisque.jpg" alt="">
-
-                    <div>
-                        <div class="info">
-                            <h4>Lobster Bisque</h4>
-                            <span>$5.95</span>
-                        </div>
-                        <p>
-                            Lorem, deren, trataro, filede, nerada
-                        </p>
-                    </div>
-                </div>
-
-                <div class="starters-plat plats">
-                    <img src="./public/images/cake.jpg" alt="">
-
-                    <div>
-                        <div class="info">
-                            <h4>Cake</h4>
-                            <span>$5.95</span>
-                        </div>
-                        <p>
-                            Lorem, deren, trataro, filede, nerada
-                        </p>
-                    </div>
-                </div>
-
-                <div class="salades plats">
-                    <img src="./public/images/tuscan-grilled.jpg" alt="">
-
-                    <div>
-                        <div class="info">
-                            <h4>Tuscan - grilled</h4>
-                            <span>$5.95</span>
-                        </div>
-                        <p>
-                            Lorem, deren, trataro, filede, nerada
-                        </p>
-                    </div>
-                </div>
-
-                <div class="salades plats">
-                    <img src="./public/images/mozzarella.jpg" alt="">
-
-                    <div>
-                        <div class="info">
-                            <h4>mozzarella</h4>
-                            <span>$5.95</span>
-                        </div>
-                        <p>
-                            Lorem, deren, trataro, filede, nerada
-                        </p>
-                    </div>
-                </div>
-
-                <div class="salades plats">
-                    <img src="./public/images/greek-salad.jpg" alt="">
-
-                    <div>
-                        <div class="info">
-                            <h4>Greek-Salad</h4>
-                            <span>$5.95</span>
-                        </div>
-                        <p>
-                            Lorem, deren, trataro, filede, nerada
-                        </p>
-                    </div>
-                </div>
-
-                <div class="salades plats">
-                    <img src="./public/images/lobster-roll.jpg" alt="">
-
-                    <div>
-                        <div class="info">
-                            <h4>Lobster Roll</h4>
-                            <span>$5.95</span>
-                        </div>
-                        <p>
-                            Lorem, deren, trataro, filede, nerada
-                        </p>
-                    </div>
-                </div>
-
-                <div class="specialty plats">
-                    <img src="./public/images/bread-barrel.jpg" alt="">
-
-                    <div>
-                        <div class="info">
-                            <h4>Bread Barrel</h4>
-                            <span>$5.95</span>
-                        </div>
-                        <p>
-                            Lorem, deren, trataro, filede, nerada
-                        </p>
-                    </div>
-                </div>
-
-                <div class="specialty plats">
-                    <img src="./public/images/caesar.jpg" alt="">
-
-                    <div>
-                        <div class="info">
-                            <h4>caesar</h4>
-                            <span>$5.95</span>
-                        </div>
-                        <p>
-                            Lorem, deren, trataro, filede, nerada
-                        </p>
-                    </div>
-                </div>
-
-
-            </div>
-
-        </section>
-        <!--! Specials -->
-
-
-        <section id="specials">
-            <div class="title">
-                <p>specials <span>—————————</span></p>
-                <h2>check our specials</h2>
-            </div>
-
-            <div class="flex">
-                <div class="list">
-                    <a href="#" id="modi">modi sit est</a>
-                    <a href="#" id="praesentium">unde praesentium sed</a>
-                    <a href="#" id="pariatur">pariatur explicabo vel</a>
-                    <a href="#" id="nostrum">nostrum qui quasi</a>
-                    <a href="#" id="lusti">lusti ut expedita aut</a>
-                </div>
-
-                <div class="chooses">
-                    <div id="first">
-                        <div>
-                            <h3>Architecto ut aperiam autem id</h3>
-                            <p>Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna
-                                mareta paulona marka</p>
-
-                            <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint...</p>
-                        </div>
-                        <div>
-                            <img src="./public/images/specials-1.png" alt="">
-                        </div>
-                    </div>
-
-                    <div id="second" class="none">
-                        <div>
-                            <h3>Et blanditiis nemo veritatis excepturi</h3>
-                            <p>Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata...</p>
-
-                            <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia...</p>
-                        </div>
-                        <div>
-                            <img src="./public/images/specials-2.png" alt="">
-                        </div>
-                    </div>
-
-                    <div id="third" class="none">
-                        <div>
-                            <h3>Impedit facilis occaecati odio neque aperiam sit</h3>
-                            <p>Eos voluptatibus quo. Odio similique illum id quidem non enim fuga...</p>
-                            <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa...</p>
-                        </div>
-                        <div>
-                            <img src="./public/images/specials-3.png" alt="">
-                        </div>
-                    </div>
-
-                    <div id="fourth" class="none">
-                        <div>
-                            <h3>Fuga dolores inventore laboriosam ut est</h3>
-                            <p>Totam aperiam accusamus. Repellat consequuntur iure voluptas...</p>
-                            <p>Eaque consequuntur consequuntur libero expedita in voluptas...</p>
-                        </div>
-                        <div>
-                            <img src="./public/images/specials-4.png" alt="">
-                        </div>
-                    </div>
-
-                    <div id="fifth" class="none">
-                        <div>
-                            <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
-                            <p>Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
-                            <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus...</p>
-                        </div>
-                        <div>
-                            <img src="./public/images/specials-5.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-
-        <!--^ events -->
-         <div id="events" class="carousel-section">
-  <div autoslide="true" id="carousel1" class="carousel-container">
-    <div class="carousel">
-      <div class="slide">
-        <img src="./public/images/events-slider-1.jpg" alt="">
-      </div>
-      <div class="slide">
-        <img src="./public/images/events-slider-2.jpg" alt="">
-      </div>
-      <div class="slide">
-        <img src="./public/images/events-slider-3.jpg" alt="">
-      </div>
     </div>
-
-    <button carousel-target="carousel1" class="next-btn"></button>
-    <button carousel-target="carousel1" class="previous-btn"></button>
-  </div>
-
-  <div class="description-box">
-    <h1>Welcome to Our Event</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dapibus magna sit amet lacus efficitur, nec malesuada justo porttitor.</p>
-    <p>Curabitur ullamcorper lorem ac eros malesuada, sed fringilla nulla pulvinar. Mauris eget placerat justo.</p>
-  </div>
-</div>
-        <!--* chefs -->
+</header>
+<main>
 
 
-        <div id="chefs" class="team ">
-            <div class="title">
-                <p>Team <span>——————————</span></p>
-                <h2>necessitatibus eius consequatur</h2>
-            </div>
 
-            <div class="d-flex gap-2 ">
-                <div class="items">
-                    <div class="click">
-                        <img src="./public/images/chefs-1.jpg" alt="">
-                    </div>
-                    <div class="infos  text-center">
-                        <h6>walter white</h6>
-                        <p>master chef</p>
-                        <div class="d-flex gap-2 py-3  justify-content-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-facebook" viewBox="0 0 16 16">
-                                <path
-                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-twitter-x" viewBox="0 0 16 16">
-                                <path
-                                    d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-instagram" viewBox="0 0 16 16">
-                                <path
-                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-linkedin" viewBox="0 0 16 16">
-                                <path
-                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-                <div class="items">
-                    <div class="click">
-                        <img src="./public/images/chefs-2.jpg" alt="">
-                    </div>
-                    <div class="infos  text-center">
-                        <h6>sara johnson</h6>
-                        <p>patissier</p>
-                        <div class="d-flex gap-2 py-3  justify-content-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-facebook" viewBox="0 0 16 16">
-                                <path
-                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-twitter-x" viewBox="0 0 16 16">
-                                <path
-                                    d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-instagram" viewBox="0 0 16 16">
-                                <path
-                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-linkedin" viewBox="0 0 16 16">
-                                <path
-                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-                <div class="items">
-                    <div class="click">
-                        <img src="./public/images/chefs-3.jpg" alt="">
-                    </div>
-                    <div class="infos  text-center">
-                        <h6>wiliam anderson</h6>
-                        <p>cook</p>
-                        <div class="d-flex gap-2 py-3  justify-content-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-facebook" viewBox="0 0 16 16">
-                                <path
-                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-twitter-x" viewBox="0 0 16 16">
-                                <path
-                                    d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-instagram" viewBox="0 0 16 16">
-                                <path
-                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-linkedin" viewBox="0 0 16 16">
-                                <path
-                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!--! about -->
+    <section id="about">
+        <div class="container">
+            <h1>Voluptatem dignissimos provident</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et
+                dolore magna aliqua.</p>
+            <ul>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-check2-all" viewBox="0 0 16 16">
+                        <path
+                            d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0" />
+                        <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708" />
+                    </svg>
+                    </svg> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-check2-all" viewBox="0 0 16 16">
+                        <path
+                            d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0" />
+                        <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708" />
+                    </svg>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-check2-all" viewBox="0 0 16 16">
+                        <path
+                            d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0" />
+                        <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708" />
+                    </svg>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in
+                    voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+
+            </ul>
+            <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident</p>
+        </div>
+        <div class="image ">
+            <img width="600px" height="400px" src="./public/images/about.jpg" alt="">
+        </div>
+    </section>
+    <div class="whyus">
+        <div class="title">
+            <p>WHY US <span>————————</span></p>
+            <h1>Why Choose Our Restaurant</h1>
 
         </div>
-        <!--! RESERVATION -->
-        <section id="reservation" class="reservation">
-            <div class="title">
-                <p>RESERVATION <span>———————————</span></p>
-                <h2>Book a Table</h2>
+        <div class="flex">
+            <div class="chooses">
+                <h1>01</h1>
+                <p>Lorem, ipsum.</p>
+                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti esse excepturi facilis
+                    soluta modi?</span>
             </div>
+            <div class="chooses">
+                <h1>02</h1>
+                <p>Lorem, ipsum.</p>
+                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti esse excepturi facilis
+                    soluta modi?</span>
 
-            <form id="reservation-form">
-                <input type="text" id="name" placeholder="Your Name" />
-                <input type="email" id="email" placeholder="Your Email" />
-                <input type="tel" id="phone" placeholder="Your Phone" />
-                <input type="date" id="date" />
-                <input type="time" id="time" />
-                <input type="number" id="people" placeholder="# of people" />
+            </div>
+            <div class="chooses">
+                <h1>03</h1>
+                <p>Lorem, ipsum.</p>
+                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti esse excepturi facilis
+                    soluta modi?</span>
 
-                <div class="flex">
-                    <textarea id="message" placeholder="Message"></textarea>
-                    <button type="submit">Book a Table</button>
+            </div>
+        </div>
+    </div>
+    <!--~ menu -->
+    <section id="menu" class="menu">
+        <div class="titre">
+            <p>MENU<span>———————————</span></p>
+            <h1>Check Our Tasty Menu </h1>
+        </div>
+
+        <div class="links">
+            <button id="all-tabs">All</button>
+            <button id="starters">Starters</button>
+            <button id="salades">Salades</button>
+            <button id="specialty">Specialty</button>
+        </div>
+
+        <div class="MENU">
+            <div class="starters-plat plats">
+                <img src="./public/images/lobster-bisque.jpg" alt="">
+
+                <div>
+                    <div class="info">
+                        <h4>Lobster Bisque</h4>
+                        <span>$5.95</span>
+                    </div>
+                    <p>
+                        Lorem, deren, trataro, filede, nerada
+                    </p>
                 </div>
-            </form>
-        </section>
-
-
-
-<!--^ gallery -->
-
-
-        <!--* contact -->
-        <section id="contact" class="contact section">
-
-
-
-            <div class="container title aos-init aos-animate" data-aos="fade-up">
-                <p>Contact <span>——————————</span></p>
-                <h2>Contact Us</h2>
             </div>
 
-            <div class="mb-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-                <iframe style="border:0; width: 100%; height: 400px;"
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
-                    frameborder="0" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="starters-plat plats">
+                <img src="./public/images/cake.jpg" alt="">
+
+                <div>
+                    <div class="info">
+                        <h4>Cake</h4>
+                        <span>$5.95</span>
+                    </div>
+                    <p>
+                        Lorem, deren, trataro, filede, nerada
+                    </p>
+                </div>
             </div>
 
-            <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+            <div class="salades plats">
+                <img src="./public/images/tuscan-grilled.jpg" alt="">
 
-                <div class="row gy-4">
-
-                    <div class="col-lg-4">
-                        <div class="info-item d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-                            <i class="bi bi-geo-alt flex-shrink-0"></i>
-                            <div class="div">
-                                <h3>Location</h3>
-                                <p>A108 Adam Street, New York, NY 535022</p>
-                            </div>
-                        </div>
-
-                        <div class="info-item2 d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
-                            <i class="bi bi-telephone flex-shrink-0"></i>
-                            <div class="div">
-                                <h3>Open Hours</h3>
-                                <p>Monday-Saturday:<br>11:00 AM - 2300 PM</p>
-                            </div>
-                        </div>
-
-                        <div class="info-item3 d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
-                            <i class="bi bi-telephone flex-shrink-0"></i>
-                            <div class="div">
-                                <h3>Call Us</h3>
-                                <p>+1 5589 55488 55</p>
-                            </div>
-                        </div>
-
-                        <div class="info-item4 d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
-                            <i class="bi bi-envelope flex-shrink-0"></i>
-                            <div class="div">
-                                <h3>Email Us</h3>
-                                <p>info@example.com</p>
-                            </div>
-                        </div>
-
+                <div>
+                    <div class="info">
+                        <h4>Tuscan - grilled</h4>
+                        <span>$5.95</span>
                     </div>
+                    <p>
+                        Lorem, deren, trataro, filede, nerada
+                    </p>
+                </div>
+            </div>
 
-                    <div class="col-lg-8">
-                        <form action="forms/contact.php" method="post" class="php-email-form aos-init aos-animate"
-                            data-aos="fade-up" data-aos-delay="200">
-                            <div class="row gy-4">
+            <div class="salades plats">
+                <img src="./public/images/mozzarella.jpg" alt="">
 
-                                <div class="col-md-6">
-                                    <input type="text" name="name" class="form-control" placeholder="Your Name"
-                                        required="">
-                                </div>
-
-                                <div class="col-md-6 ">
-                                    <input type="email" class="form-control" name="email" placeholder="Your Email"
-                                        required="">
-                                </div>
-
-                                <div class="col-md-12">
-                                    <input type="text" class="form-control" name="subject" placeholder="Subject"
-                                        required="">
-                                </div>
-
-                                <div class="col-md-12">
-                                    <textarea class="form-control" name="message" rows="6" placeholder="Message"
-                                        required=""></textarea>
-                                </div>
-
-                                <div class="col-md-12 text-center">
-                                    <!-- <div class="loading">Loading</div> -->
-                                    <!-- <div class="error-message"></div>
-                                                                                            <div class="sent-message">Your message has been sent. Thank you!</div> -->
-
-                                    <button type="submit">Send Message</button>
-                                </div>
-
-                            </div>
-                        </form>
+                <div>
+                    <div class="info">
+                        <h4>mozzarella</h4>
+                        <span>$5.95</span>
                     </div>
+                    <p>
+                        Lorem, deren, trataro, filede, nerada
+                    </p>
+                </div>
+            </div>
 
+            <div class="salades plats">
+                <img src="./public/images/greek-salad.jpg" alt="">
+
+                <div>
+                    <div class="info">
+                        <h4>Greek-Salad</h4>
+                        <span>$5.95</span>
+                    </div>
+                    <p>
+                        Lorem, deren, trataro, filede, nerada
+                    </p>
+                </div>
+            </div>
+
+            <div class="salades plats">
+                <img src="./public/images/lobster-roll.jpg" alt="">
+
+                <div>
+                    <div class="info">
+                        <h4>Lobster Roll</h4>
+                        <span>$5.95</span>
+                    </div>
+                    <p>
+                        Lorem, deren, trataro, filede, nerada
+                    </p>
+                </div>
+            </div>
+
+            <div class="specialty plats">
+                <img src="./public/images/bread-barrel.jpg" alt="">
+
+                <div>
+                    <div class="info">
+                        <h4>Bread Barrel</h4>
+                        <span>$5.95</span>
+                    </div>
+                    <p>
+                        Lorem, deren, trataro, filede, nerada
+                    </p>
+                </div>
+            </div>
+
+            <div class="specialty plats">
+                <img src="./public/images/caesar.jpg" alt="">
+
+                <div>
+                    <div class="info">
+                        <h4>caesar</h4>
+                        <span>$5.95</span>
+                    </div>
+                    <p>
+                        Lorem, deren, trataro, filede, nerada
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+    <!--! Specials -->
+
+
+    <section id="specials">
+        <div class="title">
+            <p>specials <span>—————————</span></p>
+            <h2>check our specials</h2>
+        </div>
+
+        <div class="flex">
+            <div class="list">
+                <a href="#" id="modi">modi sit est</a>
+                <a href="#" id="praesentium">unde praesentium sed</a>
+                <a href="#" id="pariatur">pariatur explicabo vel</a>
+                <a href="#" id="nostrum">nostrum qui quasi</a>
+                <a href="#" id="lusti">lusti ut expedita aut</a>
+            </div>
+
+            <div class="chooses">
+                <div id="first">
+                    <div>
+                        <h3>Architecto ut aperiam autem id</h3>
+                        <p>Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna
+                            mareta paulona marka</p>
+
+                        <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint...</p>
+                    </div>
+                    <div>
+                        <img src="./public/images/specials-1.png" alt="">
+                    </div>
                 </div>
 
-            </div>
-        </section>
+                <div id="second" class="none">
+                    <div>
+                        <h3>Et blanditiis nemo veritatis excepturi</h3>
+                        <p>Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata...</p>
 
-    </main>
-
-
-
-    <!-- *footer -->
-    <footer>
-        <div class="footer">
-
-            <div class="flexing">
-                <h4>Restaurantly</h4>
-                <span>A108 Adam Street</span>
-                <span>New York, NY 535022</span>
-                <span>Phone: +1 5589 55488 55</span>
-                <span>Email: info@example.com</span>
-                <div class="icons">
-                    <div class="icon-container">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-twitter-x" viewBox="0 0 16 16">
-                            <path
-                                d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
-                        </svg>
+                        <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia...</p>
                     </div>
-                    <div class="icon-container">
+                    <div>
+                        <img src="./public/images/specials-2.png" alt="">
+                    </div>
+                </div>
+
+                <div id="third" class="none">
+                    <div>
+                        <h3>Impedit facilis occaecati odio neque aperiam sit</h3>
+                        <p>Eos voluptatibus quo. Odio similique illum id quidem non enim fuga...</p>
+                        <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa...</p>
+                    </div>
+                    <div>
+                        <img src="./public/images/specials-3.png" alt="">
+                    </div>
+                </div>
+
+                <div id="fourth" class="none">
+                    <div>
+                        <h3>Fuga dolores inventore laboriosam ut est</h3>
+                        <p>Totam aperiam accusamus. Repellat consequuntur iure voluptas...</p>
+                        <p>Eaque consequuntur consequuntur libero expedita in voluptas...</p>
+                    </div>
+                    <div>
+                        <img src="./public/images/specials-4.png" alt="">
+                    </div>
+                </div>
+
+                <div id="fifth" class="none">
+                    <div>
+                        <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
+                        <p>Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
+                        <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus...</p>
+                    </div>
+                    <div>
+                        <img src="./public/images/specials-5.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--^ events -->
+    <div id="events" class="carousel-section">
+        <div autoslide="true" id="carousel1" class="carousel-container">
+            <div class="carousel">
+                <div class="slide">
+                    <img src="./public/images/events-slider-1.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./public/images/events-slider-2.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./public/images/events-slider-3.jpg" alt="">
+                </div>
+            </div>
+
+            <button carousel-target="carousel1" class="next-btn"></button>
+            <button carousel-target="carousel1" class="previous-btn"></button>
+        </div>
+
+        <div class="description-box">
+            <h1>Welcome to Our Event</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dapibus magna sit amet lacus efficitur,
+                nec malesuada justo porttitor.</p>
+            <p>Curabitur ullamcorper lorem ac eros malesuada, sed fringilla nulla pulvinar. Mauris eget placerat justo.
+            </p>
+        </div>
+    </div>
+    <!--* chefs -->
+
+
+    <div id="chefs" class="team ">
+        <div class="title">
+            <p>Team <span>——————————</span></p>
+            <h2>necessitatibus eius consequatur</h2>
+        </div>
+
+        <div class="d-flex gap-2 ">
+            <div class="items">
+                <div class="click">
+                    <img src="./public/images/chefs-1.jpg" alt="">
+                </div>
+                <div class="infos  text-center">
+                    <h6>walter white</h6>
+                    <p>master chef</p>
+                    <div class="d-flex gap-2 py-3  justify-content-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-facebook" viewBox="0 0 16 16">
                             <path
                                 d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
                         </svg>
-                    </div>
-                    <div class="icon-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-twitter-x" viewBox="0 0 16 16">
+                            <path
+                                d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                        </svg>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-instagram" viewBox="0 0 16 16">
                             <path
                                 d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
                         </svg>
-                    </div>
-                    <div class="icon-container">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-linkedin" viewBox="0 0 16 16">
                             <path
@@ -701,41 +431,319 @@
                     </div>
                 </div>
             </div>
-            <div class="flexing">
-                <h4>Useful Links</h4>
-                <span>Home</span>
-                <span>About us</span>
-                <span>SErvices</span>
-                <span>Terms of service</span>
-                <span>Privacy policy</span>
+            <div class="items">
+                <div class="click">
+                    <img src="./public/images/chefs-2.jpg" alt="">
+                </div>
+                <div class="infos  text-center">
+                    <h6>sara johnson</h6>
+                    <p>patissier</p>
+                    <div class="d-flex gap-2 py-3  justify-content-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-twitter-x" viewBox="0 0 16 16">
+                            <path
+                                d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                        </svg>
+                    </div>
+                </div>
             </div>
-            <div class="flexing">
-                <h4>Our Services</h4>
-                <span>web Design</span>
-                <span>Web Devlopment</span>
-                <span>Product Management</span>
-                <span>Marketing</span>
-                <span>Graphi</span>
-            </div>
-            <div class="ourNewsletter">
-                <h4>Our Newsletter</h4>
-                <span>Subscribe to our newsletter and receive the latest news about our products and services!</span>
-                <div class="input">
-                    <input type="email">
-                    <button>Subscribe</button>
+            <div class="items">
+                <div class="click">
+                    <img src="./public/images/chefs-3.jpg" alt="">
+                </div>
+                <div class="infos  text-center">
+                    <h6>wiliam anderson</h6>
+                    <p>cook</p>
+                    <div class="d-flex gap-2 py-3  justify-content-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-twitter-x" viewBox="0 0 16 16">
+                            <path
+                                d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                        </svg>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="end">
-            <p>© Copyright <b>Restaurantly</b> All Rights Reserved</p>
-            <p>Designed by <span>bootstrapMade</span></p>
+    </div>
+    <!--! RESERVATION -->
+    <section id="reservation" class="reservation">
+        <div class="title">
+            <p>RESERVATION <span>———————————</span></p>
+            <h2>Book a Table</h2>
         </div>
-    </footer>
+
+        <form id="reservation-form">
+            <input type="text" id="name" placeholder="Your Name" />
+            <input type="email" id="email" placeholder="Your Email" />
+            <input type="tel" id="phone" placeholder="Your Phone" />
+            <input type="date" id="date" />
+            <input type="time" id="time" />
+            <input type="number" id="people" placeholder="# of people" />
+
+            <div class="flex">
+                <textarea id="message" placeholder="Message"></textarea>
+                <button type="submit">Book a Table</button>
+            </div>
+        </form>
+    </section>
 
 
-    <script src="./public/js/app.js"></script>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+    <!--^ gallery -->
+
+
+
+<section id="gallery" class="gallery section">
+            <div class="title">
+                <h2>Gallery</h2>
+                <p>Some photos from Our Restaurant</p>
+            </div>
+            <div class="gallery__container">
+                <figure class="gallery_item">
+                    <img src="./public/images/gallery-3.jpg" alt="Gallery image 1" class="gallery_image">
+                    <figcaption class="gallery__image__caption">Restaurant Interior</figcaption>
+                </figure>
+                <figure class="gallery_item">
+                    <img src="./public/images/gallery-2.jpg" alt="Gallery image 2" class="gallery_image">
+                    <figcaption class="gallery__image__caption">Fine Dining</figcaption>
+                </figure>
+                <figure class="gallery_item">
+                    <img src="./public/images/gallery-3.jpg" alt="Gallery image 3" class="gallery_image">
+                    <figcaption class="gallery__image__caption">Chef Special</figcaption>
+                </figure>
+                <figure class="gallery_item">
+                    <img src="./public/images/gallery-4.jpg" alt="Gallery image 4" class="gallery_image">
+                    <figcaption class="gallery__image__caption">Private Area</figcaption>
+                </figure>
+                <figure class="gallery_item">
+                    <img src="./public/images/gallery-5.jpg" alt="Gallery image 5" class="gallery_image">
+                    <figcaption class="gallery__image__caption">Seafood Dish</figcaption>
+                </figure>
+                <figure class="gallery_item">
+                    <img src="./public/images/gallery-6.jpg" alt="Gallery image 6" class="gallery_image">
+                    <figcaption class="gallery__image__caption">Outdoor Seating</figcaption>
+                </figure>
+                <figure class="gallery_item">
+                    <img src="./public/images/gallery-7.jpg" alt="Gallery image 7" class="gallery_image">
+                    <figcaption class="gallery__image__caption">Dessert Selection</figcaption>
+                </figure>
+                <figure class="gallery_item">
+                    <img src="./public/images/gallery-6.jpg" alt="Gallery image 8" class="gallery_image">
+                    <figcaption class="gallery__image__caption">Signature Cocktails</figcaption>
+                </figure>
+            </div>
+        </section>
+
+
+
+
+    <!--* contact -->
+    <section id="contact" class="contact section">
+
+
+
+        <div class="container title aos-init aos-animate" data-aos="fade-up">
+            <p>Contact <span>——————————</span></p>
+            <h2>Contact Us</h2>
+        </div>
+
+        <div class="mb-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+            <iframe style="border:0; width: 100%; height: 400px;"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
+                frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="row gy-4">
+
+                <div class="col-lg-4">
+                    <div class="info-item d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                        <i class="bi bi-geo-alt flex-shrink-0"></i>
+                        <div class="div">
+                            <h3>Location</h3>
+                            <p>A108 Adam Street, New York, NY 535022</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item2 d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+                        <i class="bi bi-telephone flex-shrink-0"></i>
+                        <div class="div">
+                            <h3>Open Hours</h3>
+                            <p>Monday-Saturday:<br>11:00 AM - 2300 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item3 d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+                        <i class="bi bi-telephone flex-shrink-0"></i>
+                        <div class="div">
+                            <h3>Call Us</h3>
+                            <p>+1 5589 55488 55</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item4 d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
+                        <i class="bi bi-envelope flex-shrink-0"></i>
+                        <div class="div">
+                            <h3>Email Us</h3>
+                            <p>info@example.com</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-8">
+                    <form action="forms/contact.php" method="post" class="php-email-form aos-init aos-animate"
+                        data-aos="fade-up" data-aos-delay="200">
+                        <div class="row gy-4">
+
+                            <div class="col-md-6">
+                                <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                            </div>
+
+                            <div class="col-md-6 ">
+                                <input type="email" class="form-control" name="email" placeholder="Your Email"
+                                    required="">
+                            </div>
+
+                            <div class="col-md-12">
+                                <input type="text" class="form-control" name="subject" placeholder="Subject"
+                                    required="">
+                            </div>
+
+                            <div class="col-md-12">
+                                <textarea class="form-control" name="message" rows="6" placeholder="Message"
+                                    required=""></textarea>
+                            </div>
+
+                            <div class="col-md-12 text-center">
+                                <!-- <div class="loading">Loading</div> -->
+                                <!-- <div class="error-message"></div>
+                                                                                            <div class="sent-message">Your message has been sent. Thank you!</div> -->
+
+                                <button type="submit">Send Message</button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+
+
+<!-- *footer -->
+<footer>
+    <div class="footer">
+
+        <div class="flexing">
+            <h4>Restaurantly</h4>
+            <span>A108 Adam Street</span>
+            <span>New York, NY 535022</span>
+            <span>Phone: +1 5589 55488 55</span>
+            <span>Email: info@example.com</span>
+            <div class="icons">
+                <div class="icon-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-twitter-x" viewBox="0 0 16 16">
+                        <path
+                            d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                    </svg>
+                </div>
+                <div class="icon-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                    </svg>
+                </div>
+                <div class="icon-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                    </svg>
+                </div>
+                <div class="icon-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="flexing">
+            <h4>Useful Links</h4>
+            <span>Home</span>
+            <span>About us</span>
+            <span>SErvices</span>
+            <span>Terms of service</span>
+            <span>Privacy policy</span>
+        </div>
+        <div class="flexing">
+            <h4>Our Services</h4>
+            <span>web Design</span>
+            <span>Web Devlopment</span>
+            <span>Product Management</span>
+            <span>Marketing</span>
+            <span>Graphi</span>
+        </div>
+        <div class="ourNewsletter">
+            <h4>Our Newsletter</h4>
+            <span>Subscribe to our newsletter and receive the latest news about our products and services!</span>
+            <div class="input">
+                <input type="email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="end">
+        <p>© Copyright <b>Restaurantly</b> All Rights Reserved</p>
+        <p>Designed by <span>bootstrapMade</span></p>
+    </div>
+</footer>
+
+
+<script src="./public/js/app.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 
 </html>
