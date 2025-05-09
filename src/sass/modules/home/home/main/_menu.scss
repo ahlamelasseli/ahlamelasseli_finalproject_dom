@@ -1,0 +1,103 @@
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    padding: 4vh 4vw;
+    background: #191815;
+}
+.menu p{
+  color: grey;
+}
+.menu p span{
+  color: #CDA45E;
+}
+.menu h1{
+  color: #CDA45E;
+}
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+.links > button{
+    color: #fff;
+    background: none;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+.links button:hover{
+  color: #cda45e;
+}
+.links > button:focus{
+    color: gray;
+}
+
+.MENU{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1vw;
+    // padding-inline: 10vw;
+    justify-content: center;
+    min-height: 30vh;
+}
+.plats{
+    display: flex;
+    width: calc((100% / 2) - 1vw);
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.plats> img{
+    width: 4vw;
+    border-radius: 50%;
+    border: 5px solid #ffffff48;
+}
+
+.plats > div{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+
+.info{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.info> h4{
+    color: #fff;
+    background-color: black;
+    padding-right: 10px;
+    z-index: 3;
+}
+
+.info > span{
+    color: gray;
+    padding: 0 10px;
+    font-weight: 600;
+    background-color: black;
+    z-index: 3;
+}
+
+.info::after{
+    content:  ".....................................................................................................................................................................................";
+    position: absolute;
+    left: 20px;
+    right: 0;
+    top: -4px;
+    z-index: 1;
+    color: #5c5e57;
+}
+
+.plats > div > p{
+    font-style: italic;
+    font-size: 14px;
+    color: #5c5e57;
+}

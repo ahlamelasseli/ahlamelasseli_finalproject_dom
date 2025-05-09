@@ -1,0 +1,70 @@
+#contact {
+    background-color: #191815;
+
+   
+        .title p {
+            font-size: 3vh;
+            color: #999;
+        }
+
+        .title p>span {
+            color: #CDA45E;
+        }
+
+        .title h2 {
+            color: #CDA45E;
+        }
+
+        h2 {
+            font-size: 2rem;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+  
+
+    .col-lg-4 {
+        gap: 10px !important;
+        align-items: center;
+
+    }
+
+    i {
+        gap: 15px;
+        background-color: #CDA45E;
+        padding: 0.5rem;
+        width: 3vw;
+        border-radius: 5px;
+        text-align: center;
+        height: 6vh;
+
+    }
+
+    .div {
+        color: white;
+        padding: 0.25rem;
+        p{
+            color: #999;
+        }
+    }
+    input ,
+     textarea{
+        background-color: #191815;
+        border:1px solid #CDA45E;
+        outline: #CDA45E;
+    }
+    button {
+        background: transparent;
+        color: white;
+        padding: 0.75rem 2rem;
+        border-radius: 25px;
+        border: 1px solid #CDA45E;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+    
+      button:hover {
+        background-color: #CDA45E;
+        color: #000;
+      }
+}

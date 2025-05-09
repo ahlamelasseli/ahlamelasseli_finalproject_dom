@@ -1,0 +1,71 @@
+  .reservation {
+      width: 100%;
+      padding: 2rem;
+      background: #111;
+
+      .title p {
+          font-size: 3vh;
+          color: #999;
+      }
+
+      .title p>span {
+          color: #CDA45E;
+      }
+
+      .title h2 {
+          color: #CDA45E;
+      }
+
+      h2 {
+          font-size: 2rem;
+          padding-bottom: 0.5rem;
+          margin-bottom: 1rem;
+      }
+
+      form {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 1rem;
+
+          input {
+              background: #000;
+              color: #fff;
+              border: 1px solid #333;
+              padding: 0.75rem;
+              border-radius: 5px;
+          }
+      }
+
+      .flex {
+        grid-column: span 3; // makes it span full width in grid
+        padding-top: 3vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+      
+        textarea {
+          background: #000;
+          color: #fff;
+          border: 1px solid #333;
+          padding: 0.75rem;
+          border-radius: 5px;
+          width: 100%;
+        }
+      
+        button {
+          background: transparent;
+          color: white;
+          padding: 0.75rem 2rem;
+          border-radius: 25px;
+          border: 1px solid #CDA45E;
+          cursor: pointer;
+          transition: 0.3s;
+        }
+      
+        button:hover {
+          background-color: #CDA45E;
+          color: #000;
+        }
+      }
+    }      
