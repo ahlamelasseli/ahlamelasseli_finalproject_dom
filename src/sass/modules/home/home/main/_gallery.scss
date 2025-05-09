@@ -1,0 +1,27 @@
+#gallery {
+      background-color: black;
+      padding: 2rem;
+    }
+
+    .title {
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .title p {
+      font-size: 3vh;
+      color: #999;
+    }
+
+    .title p > span {
+      color: #CDA45E;
+    }
+
+    .title h2 {
+      color: #CDA45E;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+    }

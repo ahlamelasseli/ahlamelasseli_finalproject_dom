@@ -30554,6 +30554,176 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  z-index: 5 !important;
+  font-family: "primary-font";
+}
+
+header {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+header nav {
+  background-color: black;
+  position: fixed;
+  top: 0vh;
+  left: 0;
+  color: #fff;
+  z-index: 100 !important;
+}
+header nav a h1, header nav a .h1 {
+  font-weight: bold;
+  transition: 0.5s;
+}
+header nav a h1:hover, header nav a .h1:hover {
+  scale: 110%;
+}
+header nav .navLinks {
+  z-index: 12 !important;
+}
+header nav .navLinks a {
+  transition: 0.5s;
+}
+header nav .navLinks a:hover {
+  color: rgba(205, 164, 94, 0.8) !important;
+  cursor: pointer !important;
+}
+header nav button {
+  background-color: transparent;
+  border-radius: 0.25rem;
+  border: 1px solid #cda45e;
+  color: white;
+  padding: 1vh 2vw;
+  transition: 0.5s;
+}
+header nav button:hover {
+  background-color: #cda45e;
+  color: black;
+}
+header .hidden {
+  display: none !important;
+}
+header .dropDownSelect {
+  position: absolute;
+  top: 6vh;
+  left: 0;
+  width: 13rem;
+  background-color: hsl(42, 18.1818181818%, 11%) !important;
+  border-radius: 0.25rem;
+}
+header .dropDownSelect p:hover {
+  color: rgba(205, 164, 94, 0.8) !important;
+}
+header .modalDiv {
+  width: fit-content;
+  position: fixed;
+  left: 50%;
+  top: -200%;
+  transform: translateX(-50%);
+  background-color: hsl(40, 20%, 7.5%) !important;
+  transition: 0.5s;
+  z-index: 200 !important;
+}
+header .modalDiv div input {
+  width: 30vw;
+}
+header .modalDiv div div button {
+  transition: 0.5s;
+}
+header .modalDiv div div button:hover {
+  background-color: white !important;
+  color: black !important;
+  border: 1px black solid;
+}
+header .heroSection div h1, header .heroSection div .h1 {
+  font-family: "secondary-font", sans-serif;
+  font-size: 3.5rem;
+}
+header .heroSection div h1 span, header .heroSection div .h1 span {
+  font-family: "secondary-font", sans-serif;
+}
+header .heroSection div div button {
+  transition: 0.5s;
+  width: 10rem;
+}
+header .heroSection div div button:hover {
+  background-color: #cda45e !important;
+  color: black !important;
+}
+header .heroSection .playBtn {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+}
+header .heroSection .playBtn i {
+  font-size: 3rem;
+}
+header .dropDownDiv {
+  position: relative !important;
+}
+
+header::before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: url("../../../../../public/images/hero-bg.jpg");
+  box-sizing: border-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: sepia(10%) brightness(50%);
+  z-index: 0 !important;
+}
+
+#menu, #close, #open {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  header #open, header #close {
+    display: block;
+  }
+  header #close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  header nav {
+    z-index: 10 !important;
+  }
+  header nav .navLinks {
+    position: fixed;
+    left: 50%;
+    top: -200%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.25rem;
+    background-color: white;
+    transition: 0.5s;
+    width: 90%;
+    height: 90vh;
+  }
+  header nav .navLinks a, header nav .navLinks div > p, header nav .navLinks span {
+    color: black !important;
+  }
+  header nav a h1, header nav a .h1 {
+    font-size: 1.5rem;
+  }
+  header nav button {
+    padding: 0.5vh 2vw;
+    font-size: 1rem;
+  }
+  header .modalDiv div input {
+    width: 80vw;
+  }
+}
 #about {
   display: flex;
   align-items: center;
@@ -30585,6 +30755,12 @@ textarea.form-control-lg {
 }
 #about .image img {
   border: 5px solid gray;
+}
+
+.image img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+  border: solid grey 4px;
 }
 
 .whyus {
@@ -30750,11 +30926,11 @@ textarea.form-control-lg {
   transition: transform 0.5s ease;
   border-radius: 5px;
 }
-.team .c {
+.team .click {
   position: relative;
   overflow: hidden;
 }
-.team .c::after {
+.team .click::after {
   content: "";
   position: absolute;
   background-color: rgba(0, 0, 0, 0.5);
@@ -30765,7 +30941,7 @@ textarea.form-control-lg {
   opacity: 0;
   transition: opacity 0.5s ease;
 }
-.team .c:hover::after {
+.team .click:hover::after {
   opacity: 1;
 }
 .team .items div:nth-child(2) {
@@ -30777,7 +30953,7 @@ textarea.form-control-lg {
   transform: translateY(20px);
   transition: all 0.3s ease;
 }
-.team .c:hover + div {
+.team .click:hover + div {
   opacity: 1;
   transform: translateY(0);
 }
@@ -30886,7 +31062,6 @@ textarea.form-control-lg {
 }
 
 .info::after {
-  content: ".....................................................................................................................................................................................";
   position: absolute;
   left: 20px;
   right: 0;
@@ -31021,6 +31196,102 @@ textarea.form-control-lg {
   color: #000;
 }
 
+#gallery {
+  background-color: black;
+  padding: 2rem;
+}
+#gallery .title p {
+  font-size: 3vh;
+  color: #999;
+}
+#gallery .title p > span {
+  color: #CDA45E;
+}
+#gallery .title h2, #gallery .title .h2 {
+  color: #CDA45E;
+}
+#gallery .title {
+  padding: 1rem;
+}
+
+.carousel-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3vw;
+  padding: 5vh 3vw;
+  background-image: url(../../../../../../public/images/events-bg.jpg);
+}
+
+.carousel-container {
+  width: 45vw;
+  height: 60vh;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+}
+
+.slide > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.next-btn,
+.previous-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+.previous-btn {
+  left: 10px;
+}
+
+.next-btn::after,
+.previous-btn::after {
+  content: "";
+}
+
+.description-box {
+  width: 35vw;
+  color: #fff;
+}
+
+.description-box h1, .description-box .h1 {
+  color: #CDA45E;
+  margin-bottom: 20px;
+}
+
+.description-box p {
+  line-height: 1.6;
+  color: #ccc;
+}
+
 footer {
   padding: 3rem;
   background-color: black;
@@ -31077,19 +31348,6 @@ footer .end span {
 }
 footer .end p {
   color: gray;
-}
-
-@media (max-width: 480px) {
-  footer {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-  }
-  footer .footer {
-    display: flex;
-    flex-direction: column;
-    text-align: start;
-  }
 }
 
 /*# sourceMappingURL=app.css.map */

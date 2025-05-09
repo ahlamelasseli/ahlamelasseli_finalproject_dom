@@ -1,0 +1,189 @@
+h1,h2,h3,h4,h5,h6 , p{
+    margin: 0;
+    padding: 0;
+    
+}
+*{
+    z-index: 5 !important;
+    font-family: 'primary-font';
+    // -webkit-user-select: none;
+}
+header{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    nav{
+        background-color: black;
+        position: fixed;
+        top: 0vh;
+        left: 0;
+        color: #fff;
+        z-index: 100 !important;
+        a{
+            h1{
+                font-weight: bold;
+                transition: 0.5s;
+            }
+            h1:hover{
+                scale: 110%;
+            }
+        }
+        .navLinks{
+            z-index: 12 !important;
+            a{
+                transition: 0.5s;
+            }
+            a:hover{
+                color: rgba(205, 164, 94, 0.8) !important;  
+                cursor: pointer !important;
+            }
+        }
+        button{
+            background-color: transparent;
+            border-radius: 0.25rem;
+            border: 1px solid #cda45e;
+            color: white;
+            padding: 1vh 2vw;
+            transition: 0.5s;
+        }
+        button:hover{
+            background-color: #cda45e;
+            color: black;
+        }
+    }
+.hidden{
+    display: none !important;
+}
+.dropDownSelect{
+    position: absolute;
+    top: 6vh;
+    left: 0;
+    width: 13rem;
+    background-color: hwb(42 9% 87%) !important;
+    border-radius: 0.25rem;
+    p:hover{
+        color: rgba(205, 164, 94, 0.8) !important;
+    }
+}
+.modalDiv{
+    width: fit-content;
+    position: fixed;
+    left: 50%;
+    top: -200%;
+    transform: translateX(-50%);
+    background-color: hwb(40 6% 91%) !important;
+    transition: 0.5s;
+    z-index: 200 !important;
+    div{
+        input{
+            width: 30vw;
+        }
+        div{
+            button{
+                transition: 0.5s;
+            }
+            button:hover{
+                background-color: white !important;
+                color: black !important;
+                border: 1px black solid;
+            }
+        }
+    }
+}
+.heroSection{
+    div{
+        h1{
+            font-family: 'secondary-font' , sans-serif;
+            font-size: 3.5rem;
+            span{
+                font-family: 'secondary-font' , sans-serif;
+            }
+        }
+        div{
+            button{
+                transition: 0.5s;
+                width: 10rem;
+            }
+            button:hover{
+                background-color: #cda45e!important;
+                color: black !important;
+            }
+        }
+    }
+    .playBtn{
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+        i{
+            font-size: 3rem;
+        }
+    }
+}
+.dropDownDiv{
+    position: relative !important;
+}
+}
+
+header::before{
+    content: " ";
+	position: absolute;
+	left: 0;
+	top: 0;
+    width: 100%;   
+    height: 100vh;
+    background: url('../../../../../public/images/hero-bg.jpg');
+	box-sizing: border-box;
+	background-size: cover;
+	background-repeat: no-repeat;
+	filter: sepia(10%) brightness(50%);
+	z-index: 0 !important;
+}
+#menu , #close , #open{
+    display: none;
+}
+
+@media (max-width: 900px){
+    header{
+        #open , #close{
+            display: block;
+        }
+        #close{
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+        nav{
+            z-index: 10 !important;
+            .navLinks{
+                position: fixed;
+                left: 50%;
+                top: -200%;
+                transform: translate(-50% , -50%);
+                border-radius: 0.25rem;
+                background-color: white;
+                transition: 0.5s;
+                width: 90%;
+                height: 90vh;
+                a , div>p , span{
+                    color: black !important;
+                }
+            }
+            a{
+                h1{
+                    font-size: 1.5rem;
+                }
+            }
+            button{
+                padding: 0.5vh 2vw;
+                font-size: 1rem;
+            }
+        }
+        .modalDiv{
+            div{
+                input{
+                    width: 80vw;
+                }
+            }
+        }
+    }
+}

@@ -40,7 +40,6 @@
     flex-wrap: wrap;
     align-items: center;
     gap: 1vw;
-    // padding-inline: 10vw;
     justify-content: center;
     min-height: 30vh;
 }
@@ -87,7 +86,6 @@
 }
 
 .info::after{
-    content:  ".....................................................................................................................................................................................";
     position: absolute;
     left: 20px;
     right: 0;
